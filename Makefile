@@ -5,9 +5,8 @@ OPTIONS = -lncurses
 
 all: 
 	$(COMPILER) $(SOURCES) -o $(OUTPUT) $(OPTIONS)
-	mv src/tclock/Makefile .
 
 clean:
-	rm -rvf pkg src/*.o $(OUTPUT) tclock*.pkg.tar.zst
+	rm -rvf ../../pkg ../../src/ ../../tclock*.pkg.tar.zst
 
 .PHONY: all clean 
