@@ -5,6 +5,7 @@ OPTIONS = -lncurses
 
 all: 
 	$(COMPILER) $(SOURCES) -o $(OUTPUT) $(OPTIONS)
+	mv src/tclock/Makefile .
 
 clean:
 	rm -rvf pkg src/*.o $(OUTPUT) tclock*.pkg.tar.zst
