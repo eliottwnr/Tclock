@@ -8,7 +8,7 @@ url="https://gitlab.com/eliott.wnr/tclock"
 license=('MIT')
 makedepends=('git')
 depends=('ncurses' 'glibc')
-source=("git+https://gitlab.com/eliott.wnr/tclock.git#branch=master")
+source=("git+https://gitlab.com/eliott.wnr/tclock.git#branch=package")
 noextract=('tClock_b_s.png' 'tClock_t_b_s.png')
 sha256sums=('SKIP')
 
