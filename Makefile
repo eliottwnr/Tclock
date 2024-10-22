@@ -8,7 +8,6 @@ all:
 
 
 .PHONY: clean 
-
 clean: 
-	echo "Removing all make files"
-	rm -rvf pkg src tclock tclock-1-1-any.pkg.tar.zst tclock-debug-1-1-any.pkg.tar.zst
+		echo "Removing all make files"
+		rm -rvf pkg src tclock tclock-1-1-any.pkg.tar.zst tclock-debug-1-1-any.pkg.tar.zst
