@@ -6,5 +6,6 @@ OPTIONS = -lncurses
 all: 
 	$(COMPILER) $(SOURCES) -o $(OUTPUT) $(OPTIONS)
 
-#clean: 
-#	rm -f package
+clean: 
+	echo "Removing all make files"
+	rm -rvf $(SOURCES) 
