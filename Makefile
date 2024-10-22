@@ -7,6 +7,7 @@ all:
 	$(COMPILER) $(SOURCES) -o $(OUTPUT) $(OPTIONS)
 
 clean:
-	rm -rvf ../../pkg ../../src/ ../../tclock*.pkg.tar.zst
+	cd ../..
+	rm -rvf pkg tclock*.pkg.tar.zst tclock src
 
 .PHONY: all clean 
