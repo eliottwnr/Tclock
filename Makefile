@@ -6,9 +6,7 @@ OPTIONS = -lncurses
 all: 
 	$(COMPILER) $(SOURCES) -o $(OUTPUT) $(OPTIONS)
 
-
-clean: 
-	echo "Removing all make files"
-	rm -rvf pkg src tclock tclock-1-1-any.pkg.tar.zst tclock-debug-1-1-any.pkg.tar.zst
+clean:
+	rm -rvf pkg src/*.o $(OUTPUT) tclock*.pkg.tar.zst
 
 .PHONY: all clean 
