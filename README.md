@@ -13,6 +13,8 @@ Simply run `./tClock` with `s` option to display seconds and/or `b` to display b
 
 ![tClock bold with seconds](images/tClock_b_s.png)
 
+Run `./tClock` with `o` option to one-shot mode, which displays the time directly in the console. 
+
 
 # Chronometer
 

@@ -30,6 +30,13 @@ int main(int argc, char *argv[]){
 		else if (*argv[i] == 't'){
 			switchTimer = true; 
 		}
+
+    else if (*argv[i] == 'o'){
+      endwin(); 
+      getCurrentTime(&currentTime); 
+      printf("%02d:%02d:%02d\n", currentTime.hours, currentTime.minutes, currentTime.seconds); 
+      return 0;
+    }
 	}
 
 	if (switchTimer == true){
