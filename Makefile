@@ -1,7 +1,7 @@
 all: package
 
-package: src/main.c src/main.h src/display.c src/display.h src/timer.c src/timer.h
-	cc src/main.c src/display.c src/timer.c -o tClock -lncurses
+package: /main.c /main.h /display.c /display.h /timer.c /timer.h
+	cc /main.c /display.c /timer.c -o tClock -lncurses
 
 clean: 
 	rm -f package
