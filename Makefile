@@ -1,7 +1,7 @@
-all: package
+COMPILER = cc
+SOURCES = src/main.c src/display.c src/timer.c
+OUTPUT = tclock
+OPTIONS = -lncurses
 
-package: src/main.c src/main.h src/display.c src/display.h src/timer.c src/timer.h
-	cc src/main.c src/display.c src/timer.c -o tClock -lncurses
-
-clean: 
-	rm -f package
+all: 
+	$(COMPILER) $(SOURCES) -o $(OUTPUT) $(OPTIONS)
