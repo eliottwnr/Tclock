@@ -20,10 +20,10 @@ Run `./tClock` with `o` option for one-shot mode, which displays the time direct
 **Hit `q` or `Q` to quit.**
 
 
-# Re-compiling
+# Compiling
 
 Use your favorite compiler (here cc):
 ```sh
-cc src/main.c src/display.c -o tClock -lncurses
+cc src/main.c src/display.c src/timer.c -o tClock -lncurses
 ```
 in the project's root directory.
