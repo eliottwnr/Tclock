@@ -6,10 +6,11 @@ This program is a terminal clock written in C with a ncurses tui and performance
 # Usage
 
 Simply run `./tClock` with `s` option to display seconds and/or `b` to display bold numbers.
-
 > To display both bold numbers and seconds: `./tClock b s`
 
+
 Run `./tClock` with `o` option for one-shot mode, which displays the time directly in the console. 
+> `o` option will ignore all others
 
 
 # Chronometer
