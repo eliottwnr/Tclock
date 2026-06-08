@@ -47,7 +47,7 @@ Run `./tClock` with `o` option for one-shot mode, which displays the time direct
 
 # Compiling from source
 
-After cloning the repo (see [installation](#Installation) section)
+After cloning the repo (see [installation](#installation) section)
 
 Use your favorite compiler (here cc):
 ```sh
