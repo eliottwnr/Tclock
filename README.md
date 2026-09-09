@@ -7,34 +7,51 @@ A fast and lightweight terminal clock written in C with an ncurses-based TUI, de
 
 ## Installation 
 
-Clone the project from github 
-```bash
-git clone https://github.com/eliottwnr/Tclock.git
-```
-
-Or from gitlab
+Clone the project from GitLab:
 ```bash
 git clone https://gitlab.com/eliott.wnr/tclock.git
+cd tclock
 ```
 
-Go to the project's root and run `makepkg` 
+Or from GitHub:
 ```bash
-cd tclock && makepkg -si
+git clone https://github.com/eliottwnr/Tclock.git
+cd Tclock
 ```
 
-Everything in one command
+### Method 1: Using Make (Universal)
+
+Build and install to `/usr/local/bin`:
 ```bash
-git clone https://gitlab.com/eliott.wnr/tclock.git && cd tclock && makepkg -si
+make
+sudo make install
+```
+
+To uninstall:
+```bash
+sudo make uninstall
+```
+
+### Method 2: Using makepkg (Arch Linux)
+
+Build and install package via `pacman`:
+```bash
+makepkg -si
+```
+
+To uninstall:
+```bash
+sudo pacman -R tclock
 ```
 
 
 ## Usage
 
-Simply run `./tClock` with `s` option to display seconds and/or `b` to display bold numbers.
-> To display both bold numbers and seconds: `./tClock b s`
+Simply run `tclock` (or `./tclock`) with `s` option to display seconds and/or `b` to display bold numbers.
+> To display both bold numbers and seconds: `tclock b s`
 
 
-Run `./tClock` with `o` option for one-shot mode, which displays the time directly in the console. 
+Run `tclock` with `o` option for one-shot mode, which displays the time directly in the console. 
 > `o` option will ignore all others
 
 **Hit `q` or `Q` to quit.**
@@ -42,15 +59,5 @@ Run `./tClock` with `o` option for one-shot mode, which displays the time direct
 
 ### Chronometer
 
-`./tClock t` combined with `s` and/or `b` option runs tClock on chronometer mode. Hit the spacebar in order to start/stop the chronometer. 
+`tclock t` combined with `s` and/or `b` option runs tClock on chronometer mode. Hit the spacebar in order to start/stop the chronometer. 
 
-
-# Compiling from source
-
-After cloning the repo (see [installation](#installation) section)
-
-Use your favorite compiler (here cc):
-```sh
-cc src/main.c src/display.c src/timer.c -o tClock -lncurses
-```
-in the project's root directory.
