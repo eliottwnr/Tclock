@@ -2,15 +2,16 @@ pkgbase = tclock
 	pkgdesc = ncurses-based terminal clock written in C
 	pkgver = 1
 	pkgrel = 1
-	url = https://gitlab.com/eliott.wnr/tClock
-	arch = any
+	url = https://gitlab.com/eliott.wnr/tclock
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	arch = i686
 	license = MIT
 	makedepends = git
 	depends = ncurses
 	depends = glibc
-	noextract = tClock_b_s.png
-	noextract = tClock_t_b_s.png
-	source = git+https://gitlab.com/eliott.wnr/tClock.git#branch=make
+	source = tclock::git+https://gitlab.com/eliott.wnr/tclock.git
 	sha256sums = SKIP
 
 pkgname = tclock
